@@ -3,112 +3,83 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Nexlance – Empowering Freelance</title>
+  <title>Nexlance – Freelancing Redefined</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <header class="navbar">
-    <div class="logo">Nexlance</div>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#features">Features</a>
-      <a href="#team">Team</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+  <!-- Sidebar -->
+  <div id="sidebar" class="sidebar">
+    <button id="closeBtn" class="close-btn">×</button>
+    <a href="#home">Home</a>
+    <a href="#features">Features</a>
+    <a href="#team">Team</a>
+    <a href="#contact">Contact</a>
+  </div>
 
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Empowering Freelance Excellence</h1>
-      <p>Your next client or opportunity is just a click away. Nexlance bridges the gap between startups and talent.</p>
-      <a href="#" class="btn">Get Started</a>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <img src="logo.png" alt="Nexlance Logo" class="logo"/>
+      <span class="brand-name">Nexlance</span>
     </div>
-    <img src="https://i.postimg.cc/0ytJfXbq/undraw-building-a-website-1wrp.png" alt="Hero Image" />
+    <div class="nav-right">
+      <button id="hamburger" class="hamburger">☰</button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <h1 class="animate-slide-up">Welcome to <span>Nexlance</span></h1>
+    <p class="animate-fade-in">Redefining freelancing with AI, KYC, instant UPI payments & trust.</p>
   </section>
 
-  <section id="about" class="about reveal">
-    <div>
-      <h2>About Nexlance</h2>
-      <p>We’re building a platform where freelancers and companies grow together through smart matching, trust, and speed. With built-in AI, secure payments, and KYC — we make freelancing stress-free.</p>
-    </div>
-    <img src="https://i.postimg.cc/LswgdqtC/undraw-freelancer-vibs.png" alt="About" />
-  </section>
-
-  <section id="features" class="features reveal">
-    <h2>Platform Highlights</h2>
-    <div class="features-grid">
-      <div class="card">
-        <img src="https://i.postimg.cc/T1rDJRWk/undraw-global-team-8jok.png" alt="" />
-        <h3>Global Talent Access</h3>
-        <p>Connect instantly with vetted talent from all over the world.</p>
+  <!-- Features Section -->
+  <section id="features" class="section">
+    <h2 class="section-title animate-slide-up">Our Features</h2>
+    <div class="features-container">
+      <div class="card animate-fade-in">
+        <h3>AI-Powered Matching</h3>
+        <p>Smart assistant finds the perfect freelancers or jobs.</p>
       </div>
-      <div class="card">
-        <img src="https://i.postimg.cc/wvRJ35xY/undraw-interview-yz52.png" alt="" />
-        <h3>Smart Matching</h3>
-        <p>AI-based suggestions that reduce your time to hire or apply.</p>
+      <div class="card animate-fade-in">
+        <h3>KYC Verification</h3>
+        <p>Secure your account with Aadhaar & UPI-based KYC.</p>
       </div>
-      <div class="card">
-        <img src="https://i.postimg.cc/rsLdmvY5/undraw-remote-worker-0l91.png" alt="" />
-        <h3>Freelancer Friendly</h3>
-        <p>Build your profile, get noticed, and receive client reviews.</p>
-      </div>
-      <div class="card">
-        <img src="https://i.postimg.cc/GmbkzsKv/undraw-secure-login-m11a.png" alt="" />
-        <h3>Verified & Secure</h3>
-        <p>UPI + Aadhaar based verification keeps everyone safe.</p>
-      </div>
-      <div class="card">
-        <img src="https://i.postimg.cc/pd6z2cHB/undraw-stripe-payments-jxnn.png" alt="" />
-        <h3>Payments Built-In</h3>
-        <p>Get paid fast with integrated Razorpay/Stripe payments.</p>
+      <div class="card animate-fade-in">
+        <h3>Instant UPI Payments</h3>
+        <p>Quick & reliable transactions directly through UPI.</p>
       </div>
     </div>
   </section>
 
-  <section id="team" class="team reveal">
-    <h2>Meet Our Team</h2>
-    <div class="team-grid">
-      <div class="member">
+  <!-- Team Section -->
+  <section id="team" class="section team-section">
+    <h2 class="section-title animate-slide-up">Our Team</h2>
+    <div class="team-container">
+      <div class="team-member animate-fade-in">
         <h3>Aashish Singh</h3>
-        <p>Founder, Project Manager & CEO</p>
+        <p>Founder, CEO & Project Manager</p>
       </div>
-      <div class="member">
-        <h3>Abhisek Singh</h3>
-        <p>Co-founder, Team Manager & Marketing Head</p>
+      <div class="team-member animate-fade-in">
+        <h3>Abhishek Singh</h3>
+        <p>Co-founder, Team Manager & Marketing Lead</p>
       </div>
-      <div class="member">
+      <div class="team-member animate-fade-in">
         <h3>Yash Ahuja</h3>
-        <p>Operations, Funding & Strategic Decisions</p>
+        <p>Co-founder, Finance, Connections & Ops</p>
       </div>
-      <div class="member">
+      <div class="team-member animate-fade-in">
         <h3>Shubh Bhat</h3>
         <p>Co-founder & Marketing Head</p>
       </div>
     </div>
   </section>
 
-  <section id="contact" class="contact reveal">
-    <h2>Contact Us</h2>
-    <p>Email us at <strong>hello@nexlance.in</strong> or follow us on social platforms.</p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Nexlance. Built with vision and passion.</p>
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Nexlance. All rights reserved.</p>
   </footer>
 
-  <script>
-    // Scroll reveal animation
-    const reveals = document.querySelectorAll(".reveal");
-    window.addEventListener("scroll", () => {
-      for (let i = 0; i < reveals.length; i++) {
-        const windowHeight = window.innerHeight;
-        const elementTop = reveals[i].getBoundingClientRect().top;
-        if (elementTop < windowHeight - 100) {
-          reveals[i].classList.add("active");
-        }
-      }
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
