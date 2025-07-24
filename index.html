@@ -1,136 +1,83 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Nexlance — Freelancing Redefined</title>
-  <link rel="stylesheet" href="style.css"/>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
-  <header class="flex justify-between items-center p-4 shadow-md bg-white dark:bg-gray-900">
-    <div class="flex items-center gap-3">
-      <img src="https://i.postimg.cc/zGvmrQVH/Chat-GPT-Image-Jun-8-2025-01-25-35-PM.png" alt="Nexlance Logo" class="h-10 w-10"/>
-      <h1 class="text-2xl font-bold text-purple-600 dark:text-green-300">Nexlance</h1>
-    </div>
-    <div class="flex items-center gap-4">
-      <button id="themeToggle" class="px-3 py-1 text-sm bg-purple-100 dark:bg-gray-700 rounded transition">Toggle Mode</button>
-      <button id="menuBtn" class="text-3xl font-bold dark:text-white">&#9776;</button>
-    </div>
-  </header>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Nexlance - Redefining Freelancing</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <nav class="sidebar" id="sidebar">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
 
-  <nav id="sidebar" class="fixed top-0 left-0 h-full w-64 bg-white dark:bg-gray-800 shadow transform -translate-x-full transition-transform z-50">
-    <div class="flex justify-between items-center p-4 border-b dark:border-gray-700">
-      <h2 class="text-xl font-bold text-purple-600 dark:text-green-300">Menu</h2>
-      <button id="closeBtn" class="text-2xl">&times;</button>
-    </div>
-    <ul class="flex flex-col gap-4 p-4 text-lg">
-      <li><a href="#about" class="link">About</a></li>
-      <li><a href="#why" class="link">Why Nexlance</a></li>
-      <li><a href="#team" class="link">Team</a></li>
-      <li><a href="#contact" class="link">Contact</a></li>
-      <li><a href="#begin" class="link">Let’s Begin</a></li>
-    </ul>
-  </nav>
+    <!-- Header -->
+    <header id="home">
+      <div class="top-bar">
+        <img src="https://i.postimg.cc/zGvmrQVH/Chat-GPT-Image-Jun-8-2025-01-25-35-PM.png" alt="Nexlance Logo" class="logo" />
+        <h1 class="logo-text">Nexlance</h1>
+        <div class="hamburger" onclick="toggleSidebar()">☰</div>
+      </div>
+      <div class="hero">
+        <h1>Welcome to <span class="highlight">Nexlance</span></h1>
+        <p>Redefining freelancing with AI, KYC, instant UPI payments & trust.</p>
+        <a href="https://forms.gle/vPevgQ7fSbWEr2ak8" target="_blank" class="cta">Join Beta</a>
+      </div>
+    </header>
 
-  <main class="pt-8">
-    <section class="text-center px-6 py-12 fade-in">
-      <h2 class="text-3xl font-bold text-purple-600 dark:text-green-300 mb-4">Welcome to Nexlance</h2>
-      <p class="text-gray-700 dark:text-gray-200 text-lg mb-6">
-        Redefining freelancing with AI, KYC, instant UPI payments & trust.
-      </p>
-      <img src="https://i.postimg.cc/0ytJfXbq/undraw-building-a-website-1wrp.png" alt="Hero" class="mx-auto w-full max-w-md"/>
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Nexlance</h2>
+      <p>Nexlance is a next-gen freelancing platform powered by AI. We simplify hiring, ensure trust with KYC, and enable instant UPI-based payments. Designed for startups, by startup minds.</p>
     </section>
 
-    <section class="grid gap-10 md:grid-cols-2 px-6 py-12 fade-in" id="why">
-      <img src="https://i.postimg.cc/LswgdqtC/undraw-freelancer-vibs.png" alt="Why Nexlance" class="rounded shadow-md"/>
-      <div>
-        <h3 class="text-2xl font-semibold text-purple-600 dark:text-green-300 mb-2">Why Nexlance?</h3>
-        <p class="text-gray-600 dark:text-gray-300">We empower freelancers with real-time support, verified clients, and guaranteed payments through UPI.</p>
-      </div>
-    </section>
-
-    section id="features">
-    <h2>Why Nexlance?</h2>
-    <ul>
-      <li>🚀 Fast onboarding with KYC & profile setup</li>
-      <li>💸 UPI-based instant client-to-freelancer payments</li>
-      <li>🤖 Smart AI assistant for both clients and freelancers</li>
-      <li>🔐 Secure & transparent communication</li>
-    </ul>
-  </section>
-
-  <section id="team">
-    <h2>Meet Our Team</h2>
-    <div class="team-members">
-      <div class="team-card">
-        <h3>Aashish Singh</h3>
-        <p>Founder & Product Manager — Brains behind Nexlance's seamless product flow, innovation & UX-led development.</p>
-      </div>
-      <div class="team-card">
-        <h3>Abhishek Singh</h3>
-        <p>Co-founder & Team Manager — Keeps the engine running, managing timelines, people & priorities.</p>
-      </div>
-      <div class="team-card">
-        <h3>Shubh Bhatt</h3>
-        <p>Marketing Head — Leads outreach with a mix of Gen-Z strategy and startup flair to make Nexlance known.</p>
-      </div>
-      <div class="team-card">
-        <h3>Yash Ahuja</h3>
-        <p>Operations Advisor — Backbone of all decision-making, strategy, and funding-related execution.</p>
-      </div>
-    </div>
-  </section>
-
-    <section class="grid gap-10 md:grid-cols-2 px-6 py-12 fade-in" id="contact">
-      <img src="https://i.postimg.cc/wvRJ35xY/undraw-interview-yz52.png" alt="Contact" class="rounded shadow-md"/>
-      <div>
-        <h3 class="text-2xl font-semibold text-purple-600 dark:text-green-300 mb-2">Contact Us</h3>
-        <p class="text-gray-600 dark:text-gray-300">Reach out for queries, suggestions, or collaborations. We’re always open.</p>
+    <!-- Features Section -->
+    <section id="features">
+      <h2>Features</h2>
+      <div class="features-grid">
+        <div class="feature-card">🤖 AI Freelancer Matching</div>
+        <div class="feature-card">🔐 Verified KYC Profiles</div>
+        <div class="feature-card">⚡ Instant UPI Payments</div>
+        <div class="feature-card">🔑 OTP Secure Login</div>
+        <div class="feature-card">🌐 Global Talent Access</div>
+        <div class="feature-card">🛠️ Project Management</div>
       </div>
     </section>
 
-    <section class="text-center px-6 py-16 fade-in" id="begin">
-      <h3 class="text-2xl font-bold text-purple-600 dark:text-green-300 mb-4">Let’s Begin Your Journey</h3>
-      <p class="text-gray-600 dark:text-gray-300 mb-6">Join Nexlance — the smarter freelance platform.</p>
-      <button class="px-6 py-2 bg-purple-600 text-white rounded hover:bg-purple-700 transition">Get Started</button>
+    <!-- Team Section -->
+    <section id="team">
+      <h2>Meet Our Team</h2>
+      <div class="team-grid">
+        <div class="team-card">
+          <h3>Aashish Singh</h3>
+          <p>Co-Founder & Tech Lead</p>
+        </div>
+        <div class="team-card">
+          <h3>[Your Co-founder Name]</h3>
+          <p>Co-Founder & Ops Head</p>
+        </div>
+      </div>
     </section>
-  </main>
-</body>
-<script>
-  const menuBtn = document.getElementById('menuBtn');
-  const closeBtn = document.getElementById('closeBtn');
-  const sidebar = document.getElementById('sidebar');
-  const themeToggle = document.getElementById('themeToggle');
-  const html = document.documentElement;
 
-  menuBtn.onclick = () => sidebar.classList.remove('-translate-x-full');
-  closeBtn.onclick = () => sidebar.classList.add('-translate-x-full');
+    <!-- Contact -->
+    <footer id="contact">
+      <h2>Let's Connect</h2>
+      <p>Email: support@nexlance.in</p>
+      <p>Instagram: @nexlance.in</p>
+      <p>Made with ❤️ by Nexlance</p>
+    </footer>
 
-  themeToggle.onclick = () => {
-    if (html.dataset.theme === 'dark') {
-      html.dataset.theme = 'light';
-      localStorage.setItem('theme', 'light');
-    } else {
-      html.dataset.theme = 'dark';
-      localStorage.setItem('theme', 'dark');
-    }
-  }
-
-  // On load
-  if (localStorage.getItem('theme') === 'dark') {
-    html.dataset.theme = 'dark';
-  }
-
-  document.querySelectorAll('.fade-in').forEach(el => {
-    el.classList.add('opacity-0');
-    const observer = new IntersectionObserver(([entry]) => {
-      if (entry.isIntersecting) {
-        el.classList.remove('opacity-0');
-        el.classList.add('animate-fadein');
+    <script>
+      function toggleSidebar() {
+        document.getElementById("sidebar").classList.toggle("open");
       }
-    }, { threshold: 0.1 });
-    observer.observe(el);
-  });
-</script>
+    </script>
+  </body>
 </html>
