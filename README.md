@@ -1,1 +1,0 @@
-# Nexlance-static
