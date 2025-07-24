@@ -1,85 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Nexlance – Freelancing Redefined</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <!-- Sidebar -->
-  <div id="sidebar" class="sidebar">
-    <button id="closeBtn" class="close-btn">×</button>
-    <a href="#home">Home</a>
-    <a href="#features">Features</a>
-    <a href="#team">Team</a>
-    <a href="#contact">Contact</a>
-  </div>
-
-  <!-- Navbar -->
-  <nav class="navbar">
-    <div class="nav-left">
-      <img src="logo.png" alt="Nexlance Logo" class="logo"/>
-      <span class="brand-name">Nexlance</span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Nexlance - AI Powered Freelancing</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+      <button id="closeBtn">&times;</button>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#team">Team</a>
+      <a href="#contact">Contact</a>
     </div>
-    <div class="nav-right">
-      <button id="hamburger" class="hamburger">☰</button>
-    </div>
-  </nav>
 
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <h1 class="animate-slide-up">Welcome to <span>Nexlance</span></h1>
-    <p class="animate-fade-in">Redefining freelancing with AI, KYC, instant UPI payments & trust.</p>
-  </section>
+    <!-- Header -->
+    <header class="header">
+      <img src="logo.png" alt="Nexlance Logo" class="logo" />
+      <h1 class="brand">Nexlance</h1>
+      <button id="hamburger">&#9776;</button>
+    </header>
 
-  <!-- Features Section -->
-  <section id="features" class="section">
-    <h2 class="section-title animate-slide-up">Our Features</h2>
-    <div class="features-container">
-      <div class="card animate-fade-in">
-        <h3>AI-Powered Matching</h3>
-        <p>Smart assistant finds the perfect freelancers or jobs.</p>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <h2>Welcome to Nexlance</h2>
+        <p>
+          Redefining freelancing with <strong>AI matchmaking</strong>, <strong>KYC trust</strong>,
+          and <strong>instant UPI payments</strong>.
+        </p>
+        <a href="#about" class="cta-button">Explore More</a>
       </div>
-      <div class="card animate-fade-in">
-        <h3>KYC Verification</h3>
-        <p>Secure your account with Aadhaar & UPI-based KYC.</p>
-      </div>
-      <div class="card animate-fade-in">
-        <h3>Instant UPI Payments</h3>
-        <p>Quick & reliable transactions directly through UPI.</p>
-      </div>
-    </div>
-  </section>
+      <img src="hero-illustration.png" alt="Hero Illustration" class="hero-img"/>
+    </section>
 
-  <!-- Team Section -->
-  <section id="team" class="section team-section">
-    <h2 class="section-title animate-slide-up">Our Team</h2>
-    <div class="team-container">
-      <div class="team-member animate-fade-in">
-        <h3>Aashish Singh</h3>
-        <p>Founder, CEO & Project Manager</p>
+    <!-- About Section -->
+    <section class="about" id="about">
+      <h2>Why Nexlance?</h2>
+      <div class="features">
+        <div class="card">
+          <h3>Smart AI Matching</h3>
+          <p>Our AI connects you with the best freelancers instantly.</p>
+        </div>
+        <div class="card">
+          <h3>Verified Freelancers</h3>
+          <p>Every profile goes through UPI + Aadhaar KYC verification.</p>
+        </div>
+        <div class="card">
+          <h3>Fast Payments</h3>
+          <p>Instant UPI payments between client & freelancer.</p>
+        </div>
       </div>
-      <div class="team-member animate-fade-in">
-        <h3>Abhishek Singh</h3>
-        <p>Co-founder, Team Manager & Marketing Lead</p>
-      </div>
-      <div class="team-member animate-fade-in">
-        <h3>Yash Ahuja</h3>
-        <p>Co-founder, Finance, Connections & Ops</p>
-      </div>
-      <div class="team-member animate-fade-in">
-        <h3>Shubh Bhat</h3>
-        <p>Co-founder & Marketing Head</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <p>© 2025 Nexlance. All rights reserved.</p>
-  </footer>
+    <!-- Team Section -->
+    <section class="team" id="team">
+      <h2>Our Team</h2>
+      <div class="team-members">
+        <div class="member">
+          <h3>Aashish Singh</h3>
+          <p>Founder, CEO & Project Manager</p>
+        </div>
+        <div class="member">
+          <h3>Abhisek Singh</h3>
+          <p>Co-founder, Team & Marketing Manager</p>
+        </div>
+        <div class="member">
+          <h3>Yash Ahuja</h3>
+          <p>Co-founder, Operations & Funding Head</p>
+        </div>
+        <div class="member">
+          <h3>Shubh Bhat</h3>
+          <p>Co-founder & Marketing Head</p>
+        </div>
+      </div>
+    </section>
 
-  <script src="script.js"></script>
-</body>
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+      <p>© 2025 Nexlance. All rights reserved.</p>
+    </footer>
+  </body>
 </html>
