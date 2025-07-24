@@ -1,117 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nexlance</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
-  <script src="https://unpkg.com/scrollreveal"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nexlance — Freelancing Redefined</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-
 <body>
-  <header class="navbar">
-    <div class="container">
-      <div class="logo">
-        <img src="https://i.postimg.cc/zGvmrQVH/Chat-GPT-Image-Jun-8-2025-01-25-35-PM.png" alt="Nexlance Logo" />
-        <span>Nexlance</span>
-      </div>
-      <nav>
-        <div class="hamburger" id="hamburger">☰</div>
-        <ul id="nav-menu">
-          <li><a href="#about">About</a></li>
-          <li><a href="#features">Why Nexlance</a></li>
-          <li><a href="#team">Team</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#start">Let’s Begin</a></li>
-        </ul>
-      </nav>
+  <header class="flex justify-between items-center p-4 shadow-md bg-white dark:bg-gray-900">
+    <div class="flex items-center gap-3">
+      <img src="https://i.postimg.cc/zGvmrQVH/Chat-GPT-Image-Jun-8-2025-01-25-35-PM.png" alt="Nexlance Logo" class="h-10 w-10"/>
+      <h1 class="text-2xl font-bold text-purple-600 dark:text-green-300">Nexlance</h1>
+    </div>
+    <div class="flex items-center gap-4">
+      <button id="themeToggle" class="px-3 py-1 text-sm bg-purple-100 dark:bg-gray-700 rounded transition">Toggle Mode</button>
+      <button id="menuBtn" class="text-3xl font-bold dark:text-white">&#9776;</button>
     </div>
   </header>
 
-  <section class="hero">
-    <div class="container">
-      <div class="hero-text">
-        <h1>Welcome to <span class="highlight">Nexlance</span></h1>
-        <p>Redefining freelancing with AI, KYC, instant UPI payments & trust.</p>
+  <nav id="sidebar" class="fixed top-0 left-0 h-full w-64 bg-white dark:bg-gray-800 shadow transform -translate-x-full transition-transform z-50">
+    <div class="flex justify-between items-center p-4 border-b dark:border-gray-700">
+      <h2 class="text-xl font-bold text-purple-600 dark:text-green-300">Menu</h2>
+      <button id="closeBtn" class="text-2xl">&times;</button>
+    </div>
+    <ul class="flex flex-col gap-4 p-4 text-lg">
+      <li><a href="#about" class="link">About</a></li>
+      <li><a href="#why" class="link">Why Nexlance</a></li>
+      <li><a href="#team" class="link">Team</a></li>
+      <li><a href="#contact" class="link">Contact</a></li>
+      <li><a href="#begin" class="link">Let’s Begin</a></li>
+    </ul>
+  </nav>
+
+  <main class="pt-8">
+    <section class="text-center px-6 py-12 fade-in">
+      <h2 class="text-3xl font-bold text-purple-600 dark:text-green-300 mb-4">Welcome to Nexlance</h2>
+      <p class="text-gray-700 dark:text-gray-200 text-lg mb-6">
+        Redefining freelancing with AI, KYC, instant UPI payments & trust.
+      </p>
+      <img src="https://i.postimg.cc/0ytJfXbq/undraw-building-a-website-1wrp.png" alt="Hero" class="mx-auto w-full max-w-md"/>
+    </section>
+
+    <section class="grid gap-10 md:grid-cols-2 px-6 py-12 fade-in" id="why">
+      <img src="https://i.postimg.cc/LswgdqtC/undraw-freelancer-vibs.png" alt="Why Nexlance" class="rounded shadow-md"/>
+      <div>
+        <h3 class="text-2xl font-semibold text-purple-600 dark:text-green-300 mb-2">Why Nexlance?</h3>
+        <p class="text-gray-600 dark:text-gray-300">We empower freelancers with real-time support, verified clients, and guaranteed payments through UPI.</p>
       </div>
-      <div class="hero-img">
-        <img src="https://i.postimg.cc/0ytJfXbq/undraw-building-a-website-1wrp.png" alt="Hero" />
+    </section>
+
+    <section class="grid gap-10 md:grid-cols-2 px-6 py-12 fade-in" id="team">
+      <div>
+        <h3 class="text-2xl font-semibold text-purple-600 dark:text-green-300 mb-2">Meet the Team</h3>
+        <p class="text-gray-600 dark:text-gray-300">A passionate crew of developers, designers, and dreamers building the future of freelance work.</p>
       </div>
-    </div>
-  </section>
+      <img src="https://i.postimg.cc/T1rDJRWk/undraw-global-team-8jok.png" alt="Team" class="rounded shadow-md"/>
+    </section>
 
-  <section class="features" id="features">
-    <div class="feature">
-      <img src="https://i.postimg.cc/LswgdqtC/undraw-freelancer-vibs.png" alt="Freelancer" />
-      <h3>For Freelancers</h3>
-      <p>Smart job discovery, profile boosting & instant payments.</p>
-    </div>
-    <div class="feature">
-      <img src="https://i.postimg.cc/T1rDJRWk/undraw-global-team-8jok.png" alt="Global Team" />
-      <h3>For Clients</h3>
-      <p>Discover top talent, AI support & project success tracking.</p>
-    </div>
-    <div class="feature">
-      <img src="https://i.postimg.cc/wvRJ35xY/undraw-interview-yz52.png" alt="Interview" />
-      <h3>Instant KYC</h3>
-      <p>Seamless onboarding through Aadhaar & UPI verification.</p>
-    </div>
-    <div class="feature">
-      <img src="https://i.postimg.cc/rsLdmvY5/undraw-remote-worker-0l91.png" alt="Remote Work" />
-      <h3>AI Assistant</h3>
-      <p>24/7 AI assistant for job suggestions & freelancer search.</p>
-    </div>
-    <div class="feature">
-      <img src="https://i.postimg.cc/GmbkzsKv/undraw-secure-login-m11a.png" alt="Secure Login" />
-      <h3>Security First</h3>
-      <p>End-to-end encrypted communication & fraud detection.</p>
-    </div>
-    <div class="feature">
-      <img src="https://i.postimg.cc/pd6z2cHB/undraw-stripe-payments-jxnn.png" alt="Payments" />
-      <h3>Instant UPI Payments</h3>
-      <p>Freelancers get paid in seconds via Razorpay & PhonePe.</p>
-    </div>
-  </section>
+    <section class="grid gap-10 md:grid-cols-2 px-6 py-12 fade-in" id="contact">
+      <img src="https://i.postimg.cc/wvRJ35xY/undraw-interview-yz52.png" alt="Contact" class="rounded shadow-md"/>
+      <div>
+        <h3 class="text-2xl font-semibold text-purple-600 dark:text-green-300 mb-2">Contact Us</h3>
+        <p class="text-gray-600 dark:text-gray-300">Reach out for queries, suggestions, or collaborations. We’re always open.</p>
+      </div>
+    </section>
 
-  <section class="team" id="team">
-    <h2>Meet the Team</h2>
-    <p>Young visionaries behind Nexlance shaping the future of work.</p>
-    <!-- Add team member cards here -->
-  </section>
-
-  <section class="contact" id="contact">
-    <h2>Contact Us</h2>
-    <p>Reach out to partner, collaborate or ask questions.</p>
-    <!-- Contact form or email address -->
-  </section>
-
-  <footer>
-    <div class="container">
-      <p>© 2025 Nexlance. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <script>
-    const hamburger = document.getElementById('hamburger');
-    const navMenu = document.getElementById('nav-menu');
-
-    hamburger.addEventListener('click', () => {
-      navMenu.classList.toggle('open');
-    });
-
-    ScrollReveal().reveal('.hero-text, .hero-img, .feature, .team, .contact', {
-      delay: 200,
-      distance: '50px',
-      duration: 800,
-      easing: 'ease-in-out',
-      origin: 'bottom',
-      interval: 200
-    });
-  </script>
+    <section class="text-center px-6 py-16 fade-in" id="begin">
+      <h3 class="text-2xl font-bold text-purple-600 dark:text-green-300 mb-4">Let’s Begin Your Journey</h3>
+      <p class="text-gray-600 dark:text-gray-300 mb-6">Join Nexlance — the smarter freelance platform.</p>
+      <button class="px-6 py-2 bg-purple-600 text-white rounded hover:bg-purple-700 transition">Get Started</button>
+    </section>
+  </main>
 </body>
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const closeBtn = document.getElementById('closeBtn');
+  const sidebar = document.getElementById('sidebar');
+  const themeToggle = document.getElementById('themeToggle');
+  const html = document.documentElement;
 
+  menuBtn.onclick = () => sidebar.classList.remove('-translate-x-full');
+  closeBtn.onclick = () => sidebar.classList.add('-translate-x-full');
+
+  themeToggle.onclick = () => {
+    if (html.dataset.theme === 'dark') {
+      html.dataset.theme = 'light';
+      localStorage.setItem('theme', 'light');
+    } else {
+      html.dataset.theme = 'dark';
+      localStorage.setItem('theme', 'dark');
+    }
+  }
+
+  // On load
+  if (localStorage.getItem('theme') === 'dark') {
+    html.dataset.theme = 'dark';
+  }
+
+  document.querySelectorAll('.fade-in').forEach(el => {
+    el.classList.add('opacity-0');
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        el.classList.remove('opacity-0');
+        el.classList.add('animate-fadein');
+      }
+    }, { threshold: 0.1 });
+    observer.observe(el);
+  });
+</script>
 </html>
