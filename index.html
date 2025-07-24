@@ -1,91 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nexlance — Freelancing Made Easy</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a2d9a05f5e.js" crossorigin="anonymous"></script>
-</head>
-<body>
-  <header>
-    <nav class="navbar">
-      <div class="logo">
-        <img src="images/logo.png" alt="Nexlance Logo" />
-        <span>Nexlance</span>
-      </div>
-      <ul class="nav-links">
-        <li><a href="#features">Features</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#team">Team</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="hero">
-      <h1>Welcome to Nexlance</h1>
-      <p>India's most trusted freelance platform with AI, instant UPI payments, and secure KYC.</p>
-      <a href="#" class="cta">Join Beta Now</a>
-    </div>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nexlance – Freelance Smarter</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+    </style>
+  </head>
 
-  <section id="features">
-    <h2>Why Nexlance?</h2>
-    <div class="features-container">
-      <div class="feature">
-        <i class="fas fa-robot"></i>
-        <h3>Smart AI Assistant</h3>
-        <p>Helps freelancers find jobs and clients find talent easily.</p>
+  <body class="bg-white text-gray-800">
+    <!-- NAVBAR -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <img src="https://i.postimg.cc/zGvmrQVH/Chat-GPT-Image-Jun-8-2025-01-25-35-PM.png" alt="Nexlance Logo" class="h-10 w-auto" />
+          <span class="text-xl font-bold text-blue-700">Nexlance</span>
+        </div>
+        <nav class="space-x-4 hidden md:block">
+          <a href="#about" class="hover:text-blue-600">About</a>
+          <a href="#team" class="hover:text-blue-600">Team</a>
+          <a href="#features" class="hover:text-blue-600">Features</a>
+          <a href="#contact" class="hover:text-blue-600">Contact</a>
+        </nav>
       </div>
-      <div class="feature">
-        <i class="fas fa-bolt"></i>
-        <h3>Instant UPI Payments</h3>
-        <p>Receive money within seconds of completing your project.</p>
-      </div>
-      <div class="feature">
-        <i class="fas fa-shield-alt"></i>
-        <h3>Verified Profiles</h3>
-        <p>All users are KYC-verified for full trust and transparency.</p>
-      </div>
-    </div>
-  </section>
+    </header>
 
-  <section id="about">
-    <h2>About Nexlance</h2>
-    <p>Nexlance is a next-gen freelance platform built for modern India. With a vision to empower both companies and independent talent, we combine tech, AI, and speed to deliver unmatched freelance experiences.</p>
-  </section>
+    <!-- HERO -->
+    <section class="py-20 bg-gradient-to-br from-blue-100 to-blue-50 text-center">
+      <div class="max-w-3xl mx-auto px-4" data-aos="fade-up">
+        <h1 class="text-4xl md:text-5xl font-bold text-blue-800 mb-4">Freelance Smarter with Nexlance</h1>
+        <p class="text-lg text-gray-700 mb-6">Instant UPI payments. Verified clients. AI assistant. No more chaos. Just work and win.</p>
+        <a href="#contact" class="bg-blue-700 text-white px-6 py-3 rounded-full hover:bg-blue-800">Join the Beta</a>
+      </div>
+    </section>
 
-  <section id="team">
-    <h2>Meet Our Team</h2>
-    <div class="team-container">
-      <div class="member">
-        <h3>Aashish Singh</h3>
-        <p>Founder & Product Manager. Aashish leads the core vision, tech, and product innovation of Nexlance.</p>
+    <!-- ABOUT -->
+    <section id="about" class="py-20 px-4 bg-white" data-aos="fade-right">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl font-semibold mb-6 text-blue-800">About Nexlance</h2>
+        <p class="text-gray-700 text-lg">
+          Nexlance is a next-gen freelance platform designed for India’s rising talent and startup ecosystem. We remove the middlemen, ensure UPI-based instant payments,
+          and bring AI-based discovery of talent and work opportunities. Trusted by early-stage founders and growing professionals.
+        </p>
       </div>
-      <div class="member">
-        <h3>Abhishek Singh</h3>
-        <p>Co-Founder & Team Manager. Abhishek handles strategy, user experience, and platform scale-up.</p>
-      </div>
-      <div class="member">
-        <h3>Shubh Bhatt</h3>
-        <p>Marketing Head. Shubh drives user acquisition and brand awareness with creative campaigns.</p>
-      </div>
-      <div class="member">
-        <h3>Yash Ahuja</h3>
-        <p>Operations & Finance Advisor. Yash ensures smooth decisions, funding, and financial workflows.</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Want to collaborate or join Nexlance?</p>
-    <a href="mailto:aashishsinghvk18@gmail.com" class="email-btn">📧 aashishsinghvk18@gmail.com</a>
-  </section>
+    <!-- TEAM -->
+    <section id="team" class="py-20 px-4 bg-gray-50" data-aos="fade-up">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-semibold mb-10 text-center text-blue-800">Meet the Team</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div>
+            <h3 class="text-xl font-bold text-blue-700">Aashish Singh</h3>
+            <p>Founder & Product Manager. Visionary behind Nexlance’s AI and security innovations. Drives the roadmap and product direction with hands-on execution.</p>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-blue-700">Abhishek Singh</h3>
+            <p>Co-founder & Team Manager. Keeps operations running smooth, handles team sync, backend coordination, and key decisions.</p>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-blue-700">Shubh Bhatt</h3>
+            <p>Marketing Head. Builds Nexlance’s brand presence across social media, digital marketing, and community outreach.</p>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-blue-700">Yash Ahuja</h3>
+            <p>Operations & Finance Backbone. Handles key payments, business ops, and decision-making support across major moves.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <footer>
-    <p>© 2025 Nexlance. All rights reserved.</p>
-  </footer>
-</body>
+    <!-- FEATURES -->
+    <section id="features" class="py-20 px-4 bg-white" data-aos="fade-left">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl font-semibold mb-10 text-blue-800">Why Nexlance?</h2>
+        <ul class="space-y-6 text-lg text-gray-700">
+          <li>✅ Instant UPI Payments with Verified KYC</li>
+          <li>✅ AI Assistant for Freelancers and Clients</li>
+          <li>✅ Project Feed with Filter-Based Matching</li>
+          <li>✅ Secure, Transparent Messaging System</li>
+          <li>✅ Portfolio System and Reviews for Trust</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="py-20 bg-blue-50 px-4" data-aos="fade-up">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-3xl font-semibold text-blue-800 mb-6">Get in Touch</h2>
+        <p class="text-lg mb-4 text-gray-700">Email: <a href="mailto:hello@nexlance.in" class="text-blue-600 underline">hello@nexlance.in</a></p>
+        <a href="https://nexlance.in" class="inline-block mt-4 bg-blue-700 text-white px-6 py-3 rounded-full hover:bg-blue-800">Go to Main Website</a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="text-center text-gray-500 text-sm py-6 bg-white">
+      © 2025 Nexlance. All rights reserved.
+    </footer>
+
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>
